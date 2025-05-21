@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "Vidiem GT Vogue 3 Burner Gas Stove + Electric Kettle",
+      "image": "https://www.vidiem.in/uploads/images/image_3b0f458298.jpg",
+      "price": 15990,
+      "originalPrice": 29024,
+      "label": "Best"
+    },
+    {
+      "id": 2,
+      "title": "Crompton Ceiling Fan + Pedestal Fan",
+      "image": "https://cdn.accentuate.io/447173296432/-1693547503122/TPWE-mobile-(1)-v1695040448864.png?860x1016",
+      "price": 3950,
+      "originalPrice": 7398,
+      "label": "New"
+    },
+    {
+      "id": 3,
+      "title": "Prestige Mixer Grinder 750W with 4 Jars",
+      "image": "https://www.jiomart.com/images/product/original/rv2qp2iwte/prestige-delight-plus-750-w-mixer-grinder-4-jars-1500-ml-1500-ml-1000-ml-450-ml-yellow-black-product-images-orv2qp2iwte-p602219213-1-202306080657.jpg?im=Resize=(1000,1000)",
+      "price": 3799,
+      "originalPrice": 5799,
+      "label": "Hot"
+    },
+    {
+      "id": 4,
+      "title": "Sony WH-CH520 Wireless Headphones",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvqvdaBtPdVkSmngKiuoejtA1MDiZtKW8yA&s",
+      "price": 2699,
+      "originalPrice": 4990,
+      "label": "Trending"
+    },
+    {
+      "id": 5,
+      "title": "Philips Air Fryer HD9200, 1400W, Black",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9RRmhdARLS1pEuiE2t_WK1UJF9Vi-Hiy9A&s",
+      "price": 7999,
+      "originalPrice": 11495,
+      "label": "Limited"
+    },
+    {
+      "id": 6,
+      "title": "Samsung Galaxy M14 5G | 6GB RAM | 128GB",
+      "image": "https://rukminim3.flixcart.com/image/750/900/xif0q/mobile/9/a/g/galaxy-m14-5g-sm-m146b-samsung-original-imagzvnkufzeznhz.jpeg?q=20&crop=false",
+      "price": 11990,
+      "originalPrice": 15990,
+      "label": "Deal"
+    },
+    {
+      "id": 7,
+      "title": "boAt Airdopes 141 ANC Earbuds",
+      "image": "https://www.boat-lifestyle.com/cdn/shop/files/Artboard3_33_1500x.jpg?v=1693298659",
+      "price": 1299,
+      "originalPrice": 4490,
+      "label": "Hot"
+    },
+    {
+      "id": 8,
+      "title": "Canon PIXMA G3020 All-in-One Ink Tank Printer",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgt8fFXX0N9qBI2lRAD6s0OOdkPST9bYKGfA&s",
+      "price": 13999,
+      "originalPrice": 19499,
+      "label": "New"
+    },
+    {
+      "id": 9,
+      "title": "USHA Mist Air Duos 400mm Table Fan",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeHsHu3Bk4kjmGcORreAsrARhYzcBurNs3yw&s",
+      "price": 2250,
+      "originalPrice": 3290,
+      "label": "Popular"
+    },
+    {
+      "id": 10,
+      "title": "Amazon Echo Dot (5th Gen) with Alexa",
+      "image": "https://m.media-amazon.com/images/I/71jNr0MoZEL._AC_UF1000,1000_QL80_.jpg",
+      "price": 3499,
+      "originalPrice": 5499,
+      "label": "Smart"
+    }
+  ]
+  

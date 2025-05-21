@@ -1,0 +1,139 @@
+/* src/styles/Checkout.css */
+
+:root {
+  --primary-color: #0d6efd;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.checkout-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.checkout-form-section,
+.checkout-summary-section {
+  flex: 1 1 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition-speed) ease;
+}
+
+.checkout-form-section:hover,
+.checkout-summary-section:hover {
+  transform: translateY(-4px);
+}
+
+.checkout-form h2,
+.checkout-summary-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color var(--transition-speed) ease;
+}
+
+.checkout-form input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.checkout-summary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+}
+
+.summary-item.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.checkout-button {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.checkout-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.checkout-button:hover:not(:disabled) {
+  background: linear-gradient(to right, #000000, #ccc9c9);
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .checkout-form-section,
+  .checkout-summary-section {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-page {
+    padding: 1rem;
+  }
+
+  .checkout-form-section,
+  .checkout-summary-section {
+    padding: 1.5rem;
+  }
+
+  .checkout-form h2,
+  .checkout-summary-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .checkout-button {
+    font-size: 0.95rem;
+    padding: 0.85rem;
+  }
+}

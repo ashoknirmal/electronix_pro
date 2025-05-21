@@ -1,0 +1,96 @@
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+}
+/* Sidebar Styling */
+.admin-sidebar {
+  width: 250px;
+  background-image: linear-gradient(gray,white,black);
+  color: #ecf0f1;
+  padding: 30px 20px;
+  min-height: 100vh;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* adds spacing between links */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f6f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-widgets {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.charts {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.chart-placeholder {
+  height: 250px;
+  background-color: #ecf0f1;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

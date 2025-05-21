@@ -1,0 +1,346 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Entrance animations */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Utility class for animations */
+.animate-fade-up {
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.animate-fade-right {
+  animation: fadeSlideRight 0.8s ease forwards;
+}
+
+/* Product Page Layout */
+.product-page {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  color: #1f2937;
+}
+
+/* Sidebar */
+.filters {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+  transform-origin: left center;
+  animation: fadeSlideRight 1s ease forwards;
+}
+
+/* Filter Titles */
+.filters h3 {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Filter Labels */
+.filters label {
+  display: block;
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+/* Input Styles */
+.filters input[type="checkbox"],
+.filters input[type="radio"] {
+  accent-color: #2563eb;
+  margin-right: 0.5rem;
+}
+
+/* Product Grid */
+.product-page .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+@media (min-width: 640px) {
+  .product-page .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-page .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual Product Card */
+.product-page .grid > div {
+  background-color: #fff;
+  border: 1px solid #dcb22a;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: translateY(0);
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.product-page .grid > div:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-page img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.5s ease;
+}
+
+.product-page img:hover {
+  transform: scale(1.05);
+}
+
+/* Product Title */
+.product-page h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #e49217;
+}
+
+/* Cart Items */
+.cart-items-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.cart-items-item:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Overlay on hover */
+.cart-items-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.cart-items-item:hover::before {
+  opacity: 1;
+}
+
+/* Cart Item Info */
+.cart-items-item .info {
+  position: relative;
+  z-index: 2;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.cart-items-item:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cart Item Button */
+.cart-items-item .info button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cart-items-item .info button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* General Buttons */
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #d7c906;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.05);
+}
+
+/* View Details Link */
+.text-blue-600 {
+  color: #000;
+}
+.text-blue-600:hover {
+  text-decoration: underline;
+}
+
+/* Product Details Section */
+.product-details {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.product-details img {
+  border-radius: 8px;
+}
+
+/* Thumbnail Hover */
+.flex img.w-20 {
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.flex img.w-20:hover {
+  border-color: #000;
+  transform: scale(1.08);
+}
+
+/* Color Circles */
+.w-8.h-8.rounded-full {
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+.w-8.h-8.rounded-full:hover {
+  transform: scale(1.1);
+}
+
+/* Utility Text Classes */
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.text-sm { font-size: 0.875rem; }
+.text-gray-600 { color: #63534b; }
+.text-gray-400 { color: #000; }
+.text-red-500 { color: #ef4444; }
+.text-green-600 { color: #16a34a; }
+
+
+/* ----------------------------- */
+/* 🚲 Bike Loading Animation */
+/* ----------------------------- */
+
+.loading-bike {
+  width: 120px;
+  margin: 4rem auto;
+  position: relative;
+  height: 60px;
+}
+
+.wheel {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #0077ff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  animation: spin 0.8s linear infinite;
+}
+
+.wheel.left {
+  left: 0;
+}
+.wheel.right {
+  right: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 90px;
+  height: 40px;
+  border-top: 4px solid #0077ff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 50% 50% 0 0;
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

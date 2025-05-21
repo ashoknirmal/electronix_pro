@@ -1,0 +1,86 @@
+.manage-products-container {
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: #3498db;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+  transform: translateX(-3px);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table img {
+  border-radius: 5px;
+}
+
+.product-table button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.product-table button:hover {
+  opacity: 0.85;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .product-table th,
+  .product-table td {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .back-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}

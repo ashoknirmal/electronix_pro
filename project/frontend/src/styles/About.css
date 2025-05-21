@@ -1,0 +1,176 @@
+/* Global Styles */
+.about-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to right, #f7f9fc, #e6ecf3);
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Content Sections */
+.our-story, .what-we-offer, .why-choose-us {
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  animation: slideUp 1s ease forwards;
+}
+
+.our-story h2, .what-we-offer h2, .why-choose-us h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.our-story h3 {
+  margin-top: 20px;
+  color: #1565c0;
+}
+
+/* List Styling */
+.what-we-offer ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.what-we-offer li::before {
+  content: "✔";
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 50px;
+  padding: 40px 20px;
+  background: #e3f2fd;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #0d47a1;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #2196f3;
+}
+
+.testimonial p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.stars svg {
+  color: #fbc02d;
+}
+
+/* Contact Section */
+.contact-socials {
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
+}
+
+.contact-socials h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.contact-socials a {
+  color: #1976d2;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.contact-socials a:hover {
+  color: #0d47a1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .testimonial {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .our-story, .what-we-offer, .why-choose-us, .contact-socials {
+    padding: 20px;
+  }
+}
